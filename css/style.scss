@@ -1,0 +1,20 @@
+@use '../scss/abstracts/fonts';
+@use '../scss/abstracts/borders';
+
+button {
+    background-color: red;
+}
+
+.btn_style {
+ @include fonts.mainheadingproperties;
+ @include borders.rounded(1px, solid);
+}
+
+.line {
+   font: {
+      family: Lucida Sans Unicode;
+      size:20px;
+      weight: bold;
+      variant: small-caps;
+   }
+}
