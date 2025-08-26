@@ -1,0 +1,18 @@
+$primary-background-color: #000000;
+$primary-text-color: #ffffff;
+$secondary-background-color: #ffffff;
+$secondry-text-color: #000000;
+
+@mixin thememode($updatetheme: false) {
+    @if $updatetheme {
+        background-color: $primary-background-color;
+        color: $primary-text-color;
+    } @else {
+        background-color: $secondary-background-color;
+        color: $secondry-text-color;
+    }
+}
+
+body {
+    @include thememode($updatetheme: false);
+}
